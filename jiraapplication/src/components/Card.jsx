@@ -1,11 +1,11 @@
 import React from 'react'
 
-function TaskShow({task}) {
+const Card = () => {
   return (
     <div>
-      {task}
+      <p>Merhaba</p>
     </div>
   )
 }
 
-export default TaskShow;
+export default Card;
