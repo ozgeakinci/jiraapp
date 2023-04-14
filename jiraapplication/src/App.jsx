@@ -6,7 +6,11 @@ import TaskList from './components/TaskList'
 
 
 function App() {
- const [tasks, setTasks] = useState([]);
+ const [tasks, setTasks] = useState([{
+  title: 'Button eklenmesi',
+  taskDesc: 'Footer bölümüne ekle'
+
+ }]);
 
 
 
@@ -15,6 +19,7 @@ function App() {
      <TaskCreate  tasks={tasks}  setTasks={setTasks}/>
      <h1>Görevler</h1>
      <TaskList tasks= {tasks} setTasks={setTasks}/>
+
    
      
     </div>

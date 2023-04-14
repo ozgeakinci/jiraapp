@@ -1,31 +1,29 @@
-.App{
+.App {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
-.task-create{
+.task-create {
   width: 450px;
 }
 
-.task-form{
+.task-form {
   display: flex;
   flex-direction: column;
 }
 
-
-.task-label{
+.task-label {
   margin: 10px 0;
 }
 
-.task-input{
+.task-input {
   padding: 10px;
   border: 1px solid black;
   border-radius: 10px;
 }
 
-.task-button{
+.task-button {
   margin: 15px 0;
   padding: 10px;
   border: 1px solid green;
@@ -33,4 +31,44 @@
   color: white;
   border-radius: 10px;
   font-size: 18px;
+}
+
+.tasks-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.task-card {
+  width: 350px;
+  border: 1px solid green;
+  border-radius: 30px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn {
+  padding: 5px;
+  font-size: 15px;
+  border: none;
+  border-radius: 20px;
+  color: white;
+}
+
+.task-delete {
+  width: 60px;
+  margin-right: 5px;
+  background-color: red;
+}
+
+.task-edit {
+  width: 100px;
+  background-color: blue;
+}
+
+.task-title{
+  margin-bottom: 5PX;
+
 }
