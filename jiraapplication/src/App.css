@@ -8,6 +8,10 @@
   width: 450px;
 }
 
+.task-update{
+  width: 100%;
+}
+
 .task-form {
   display: flex;
   flex-direction: column;
@@ -31,6 +35,10 @@
   color: white;
   border-radius: 10px;
   font-size: 18px;
+}
+.task-button-update{
+  background-color: blueviolet;
+  border: 1px solid blueviolet;
 }
 
 .tasks-list {

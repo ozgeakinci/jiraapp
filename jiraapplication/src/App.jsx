@@ -7,6 +7,7 @@ import TaskList from './components/TaskList'
 
 function App() {
  const [tasks, setTasks] = useState([{
+  id: "0001",
   title: 'Button eklenmesi',
   taskDesc: 'Footer bölümüne ekle'
 
