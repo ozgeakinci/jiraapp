@@ -14,10 +14,23 @@ const TaskCard = ({ task, setTasks }) => {
    
   };
 
+  const handleTaskUpdate = (updatedTask) => {
+    setTasks((prevTasks) => {
+      return prevTasks.map((prevTask) => {
+        if (prevTask.id === updatedTask.id) {
+          return { ...prevTask, ...updatedTask };
+        }
+        return prevTask;
+      });
+    });
+    showSetEdit(false);
+  };
+
+
   return (
     <div className="task-card">
       {showEdit ? (
-        <TaskCreate  task={task} taskUpdate ={true}/>
+        <TaskCreate  task={task} taskUpdate ={true} onTaskUpdate={handleTaskUpdate} />
       ) : (
         <div>
           <h3 className="task-title">Göreviniz</h3>

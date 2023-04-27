@@ -20,9 +20,6 @@ function App() {
      <TaskCreate  tasks={tasks}  setTasks={setTasks}/>
      <h1>Görevler</h1>
      <TaskList tasks= {tasks} setTasks={setTasks}/>
-
-   
-     
     </div>
   )
 }

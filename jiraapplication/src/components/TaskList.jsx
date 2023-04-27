@@ -7,7 +7,7 @@ function TaskList({tasks, setTasks}) {
     <div className='tasks-list'>
       {tasks.map((task , index)=>{
         console.log(task)
-      return <TaskCard task={task} key={index} setTasks={setTasks}/>
+      return <TaskCard task={task} key={index} setTasks={setTasks} />
       })}
     </div>
   )

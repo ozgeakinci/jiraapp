@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../App.css";
 
-function TaskCreate({ setTasks, tasks, task, taskUpdate }) {
+function TaskCreate({ setTasks, tasks, task, taskUpdate, onTaskUpdate}) {
   const [title, setTitle] = useState(task ? task.title : '');
   const [taskDesc, setTaskDesc] = useState(task ? task.taskDesc : '');
 
@@ -15,7 +15,12 @@ function TaskCreate({ setTasks, tasks, task, taskUpdate }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setTasks([
+    if(taskUpdate){
+      const updatedTask = {
+        id: task.id, title, taskDesc
+      }
+      onTaskUpdate(updatedTask)
+    } else { setTasks([
       ...tasks,
       {
         id: Math.floor(Math.random() * 99999),
@@ -25,7 +30,8 @@ function TaskCreate({ setTasks, tasks, task, taskUpdate }) {
     ]);
     setTitle("");
     setTaskDesc("");
-  };
+  };}
+   
 
   return (
     <div>
